@@ -166,7 +166,7 @@ func GetMe(httpClient *http.Client) (loc string, ip string) {
 		Country string `json:"country_code"`
 	}
 
-	url := "https://ip.122911.xyz/api/ipinfo"
+	url := "https://ip.jenfon.icu"
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		slog.Debug(fmt.Sprintf("创建请求失败: %s", err))
